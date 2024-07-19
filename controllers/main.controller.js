@@ -6,7 +6,7 @@ const { status, message} = constants.response
 const test = (req, res) => {
     res
         .status(status.OK)
-        .json(response(true, message.OK))
+        .json(response(true, message.OK, { message: 'Carlos Mario Paternina Perez' }))
 }
 
 const not_found = (req, res) => {
